@@ -62,6 +62,9 @@ if __name__ == '__main__':
         print_recordings()
 
     elif args['<url>'] is not None:
+        if args['--filename'][-4] != ".mp3":
+            args['--filename'] += ".mp3"
+
         record_stream(args['<url>'], args['--filename'], args['--duration'], args['--blocksize'])
     else:
         print("command not found")
