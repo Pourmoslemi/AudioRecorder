@@ -20,7 +20,7 @@ __doc__ = \
       --filename=<name>     Name of recording [default: myRadio.mp3].
       --duration=<time>     Duration of recording in seconds [default: 5].
       --blocksize=<size>    Block size for read/write in bytes [default: 64].
-      
+      -l --listrecordings   List all recordings in audiorecorder folder.
     """
 
 
